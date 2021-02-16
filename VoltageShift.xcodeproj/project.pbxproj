@@ -9,17 +9,46 @@
 /* Begin PBXBuildFile section */
 		BC41355A25DA8D6F002CC400 /* VoltageShift.hpp in Headers */ = {isa = PBXBuildFile; fileRef = BC41355925DA8D6F002CC400 /* VoltageShift.hpp */; };
 		BC41355C25DA8D6F002CC400 /* VoltageShift.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC41355B25DA8D6F002CC400 /* VoltageShift.cpp */; };
+		BC41357325DA8FD7002CC400 /* VoltageShiftClient.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC41357125DA8FD7002CC400 /* VoltageShiftClient.cpp */; };
+		BC41357425DA8FD7002CC400 /* VoltageShiftClient.hpp in Headers */ = {isa = PBXBuildFile; fileRef = BC41357225DA8FD7002CC400 /* VoltageShiftClient.hpp */; };
+		BC41357625DA9572002CC400 /* Common.h in Headers */ = {isa = PBXBuildFile; fileRef = BC41357525DA9572002CC400 /* Common.h */; };
+		BC54D75725DB6A9F0017D1F1 /* VoltageShiftTools.mm in Sources */ = {isa = PBXBuildFile; fileRef = BC54D75625DB6A9F0017D1F1 /* VoltageShiftTools.mm */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BC41356825DA8F0A002CC400 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		BC41355625DA8D6F002CC400 /* VoltageShift.kext */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VoltageShift.kext; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC41355925DA8D6F002CC400 /* VoltageShift.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = VoltageShift.hpp; sourceTree = "<group>"; };
 		BC41355B25DA8D6F002CC400 /* VoltageShift.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = VoltageShift.cpp; sourceTree = "<group>"; };
 		BC41355D25DA8D6F002CC400 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC41356A25DA8F0A002CC400 /* VoltageShiftTools */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = VoltageShiftTools; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC41357125DA8FD7002CC400 /* VoltageShiftClient.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = VoltageShiftClient.cpp; sourceTree = "<group>"; };
+		BC41357225DA8FD7002CC400 /* VoltageShiftClient.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = VoltageShiftClient.hpp; sourceTree = "<group>"; };
+		BC41357525DA9572002CC400 /* Common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
+		BC54D75525DB66340017D1F1 /* VoltageShiftTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VoltageShiftTools.h; sourceTree = "<group>"; };
+		BC54D75625DB6A9F0017D1F1 /* VoltageShiftTools.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = VoltageShiftTools.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		BC41355325DA8D6F002CC400 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC41356725DA8F0A002CC400 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -33,6 +62,7 @@
 			isa = PBXGroup;
 			children = (
 				BC41355825DA8D6F002CC400 /* VoltageShift */,
+				BC41356B25DA8F0A002CC400 /* VoltageShiftTools */,
 				BC41355725DA8D6F002CC400 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -41,6 +71,7 @@
 			isa = PBXGroup;
 			children = (
 				BC41355625DA8D6F002CC400 /* VoltageShift.kext */,
+				BC41356A25DA8F0A002CC400 /* VoltageShiftTools */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -48,11 +79,23 @@
 		BC41355825DA8D6F002CC400 /* VoltageShift */ = {
 			isa = PBXGroup;
 			children = (
+				BC41357525DA9572002CC400 /* Common.h */,
 				BC41355925DA8D6F002CC400 /* VoltageShift.hpp */,
 				BC41355B25DA8D6F002CC400 /* VoltageShift.cpp */,
+				BC41357225DA8FD7002CC400 /* VoltageShiftClient.hpp */,
+				BC41357125DA8FD7002CC400 /* VoltageShiftClient.cpp */,
 				BC41355D25DA8D6F002CC400 /* Info.plist */,
 			);
 			path = VoltageShift;
+			sourceTree = "<group>";
+		};
+		BC41356B25DA8F0A002CC400 /* VoltageShiftTools */ = {
+			isa = PBXGroup;
+			children = (
+				BC54D75525DB66340017D1F1 /* VoltageShiftTools.h */,
+				BC54D75625DB6A9F0017D1F1 /* VoltageShiftTools.mm */,
+			);
+			path = VoltageShiftTools;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -63,6 +106,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC41355A25DA8D6F002CC400 /* VoltageShift.hpp in Headers */,
+				BC41357425DA8FD7002CC400 /* VoltageShiftClient.hpp in Headers */,
+				BC41357625DA9572002CC400 /* Common.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,6 +132,23 @@
 			productReference = BC41355625DA8D6F002CC400 /* VoltageShift.kext */;
 			productType = "com.apple.product-type.kernel-extension";
 		};
+		BC41356925DA8F0A002CC400 /* VoltageShiftTools */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC41356E25DA8F0A002CC400 /* Build configuration list for PBXNativeTarget "VoltageShiftTools" */;
+			buildPhases = (
+				BC41356625DA8F0A002CC400 /* Sources */,
+				BC41356725DA8F0A002CC400 /* Frameworks */,
+				BC41356825DA8F0A002CC400 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VoltageShiftTools;
+			productName = VoltageShiftTools;
+			productReference = BC41356A25DA8F0A002CC400 /* VoltageShiftTools */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -97,6 +159,9 @@
 				ORGANIZATIONNAME = "Charlie Jiang";
 				TargetAttributes = {
 					BC41355525DA8D6F002CC400 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					BC41356925DA8F0A002CC400 = {
 						CreatedOnToolsVersion = 11.3.1;
 					};
 				};
@@ -115,6 +180,7 @@
 			projectRoot = "";
 			targets = (
 				BC41355525DA8D6F002CC400 /* VoltageShift */,
+				BC41356925DA8F0A002CC400 /* VoltageShiftTools */,
 			);
 		};
 /* End PBXProject section */
@@ -134,7 +200,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC41357325DA8FD7002CC400 /* VoltageShiftClient.cpp in Sources */,
 				BC41355C25DA8D6F002CC400 /* VoltageShift.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC41356625DA8F0A002CC400 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC54D75725DB6A9F0017D1F1 /* VoltageShiftTools.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,10 +328,11 @@
 		BC41356125DA8D6F002CC400 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1.0.0d1;
-				DEVELOPMENT_TEAM = F9VJR763U3;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = VoltageShift/Info.plist;
 				MODULE_NAME = com.cjiang.VoltageShift;
 				MODULE_VERSION = 1.0.0d1;
@@ -269,16 +345,39 @@
 		BC41356225DA8D6F002CC400 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1.0.0d1;
-				DEVELOPMENT_TEAM = F9VJR763U3;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = VoltageShift/Info.plist;
 				MODULE_NAME = com.cjiang.VoltageShift;
 				MODULE_VERSION = 1.0.0d1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.cjiang.VoltageShift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = kext;
+			};
+			name = Release;
+		};
+		BC41356F25DA8F0A002CC400 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BC41357025DA8F0A002CC400 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
 		};
@@ -299,6 +398,15 @@
 			buildConfigurations = (
 				BC41356125DA8D6F002CC400 /* Debug */,
 				BC41356225DA8D6F002CC400 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BC41356E25DA8F0A002CC400 /* Build configuration list for PBXNativeTarget "VoltageShiftTools" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC41356F25DA8F0A002CC400 /* Debug */,
+				BC41357025DA8F0A002CC400 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
